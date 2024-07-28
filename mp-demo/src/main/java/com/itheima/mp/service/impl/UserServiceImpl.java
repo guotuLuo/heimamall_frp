@@ -2,10 +2,15 @@ package com.itheima.mp.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import com.baomidou.mybatisplus.core.metadata.OrderItem;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.extension.toolkit.Db;
+import com.itheima.mp.domain.dto.PageDTO;
 import com.itheima.mp.domain.po.Address;
 import com.itheima.mp.domain.po.User;
+import com.itheima.mp.domain.query.PageQuery;
+import com.itheima.mp.domain.query.UserQuery;
 import com.itheima.mp.domain.vo.AddressVO;
 import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.enums.UserStatus;
@@ -14,10 +19,8 @@ import com.itheima.mp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Service
@@ -125,5 +128,71 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             voList.add(userVO);
         }
         return voList;
+    }
+
+//    @Override
+//    public PageDTO pageQuery(UserQuery userQuery) {
+//        // 构建分类实体
+//        int pageNo = userQuery.getPageNo();
+//        int pageSize = userQuery.getPageSize();
+//        Page<User> page = Page.of(pageNo, pageSize);
+//        if(userQuery.getSortBy() == null){
+//            page.addOrder(new OrderItem().setColumn("create_time").setAsc(userQuery.getIsAsc()));
+//        }else{
+//            page.addOrder(new OrderItem().setColumn(userQuery.getSortBy()).setAsc(userQuery.getIsAsc()));
+//
+//        }
+//        // 使用hutool 构建分页查询
+//        String name = userQuery.getName();
+//        Integer status = userQuery.getStatus();
+//        Page<User> page1 = lambdaQuery()
+//                .like(name != null, User::getUsername, name)
+//                .eq(status != null, User::getStatus, status)
+//                .page(page);
+//
+//
+//        // 构建PageDTO
+//        PageDTO pageDTO = new PageDTO();
+//        pageDTO.setPages(page1.getPages());
+//        pageDTO.setTotal(page1.getTotal());
+//
+//        // 判断分页查询状态
+//        if(page1.getRecords() == null){
+//            pageDTO.setList(Collections.emptyList());
+//            return pageDTO;
+//        }else{
+//            List<UserVO> voList = BeanUtil.copyToList(page1.getRecords(), UserVO.class);
+//            pageDTO.setList(voList);
+//            return pageDTO;
+//        }
+//    }
+
+    // TODO 下面对上面这个分页查询函数进行解耦封装
+    // TODO 1. 封装从userQuery 到 mybatis-plus page类的返回函数
+    // TODO 2. 封装从 mybatis-plus page 到 pageDTO 的返回函数
+    // TODO 3. 这里的固定类，需要通过泛型来解耦
+    @Override
+    public PageDTO pageQuery(UserQuery userQuery) {
+        // 构建分类实体
+        Page<User> page = userQuery.toMpPage(userQuery.getSortBy(), userQuery.getIsAsc());
+
+        // 使用hutool 构建分页查询
+        String name = userQuery.getName();
+        Integer status = userQuery.getStatus();
+        Page<User> page1 = lambdaQuery()
+                .like(name != null, User::getUsername, name)
+                .eq(status != null, User::getStatus, status)
+                .page(page);
+
+        // return PageDTO.of(page1, UserVO.class);
+        //
+        // TODO  更进一步，如果我不希望写死UserVO.class 的类型，而希望把从User 到 UserVO的转换交给传入函数来做
+
+        return PageDTO.of(page1, user -> {
+            UserVO userVO = BeanUtil.copyProperties(user, UserVO.class);
+            // 隐藏user的用户名的最后两位 -- 处理特殊逻辑
+            userVO.setUsername(userVO.getUsername().substring(0, userVO.getUsername().length() - 2) + "**");
+            return userVO;
+        });
     }
 }

@@ -1,8 +1,11 @@
 package com.itheima.mp.controller;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.itheima.mp.domain.dto.PageDTO;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.dto.UserFormDTO;
+import com.itheima.mp.domain.query.PageQuery;
 import com.itheima.mp.domain.query.UserQuery;
 import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.service.UserService;
@@ -67,6 +70,12 @@ public class UserController {
     public List<UserVO> queryUsers(UserQuery userQuery){
         List<User> list = userService.queryUsers(userQuery.getName(), userQuery.getStatus(), userQuery.getMinBalance(), userQuery.getMaxBalance());
         return BeanUtil.copyToList(list, UserVO.class);
+    }
+
+    @ApiOperation("分页查询接口")
+    @GetMapping("/hello/page")
+    public PageDTO pageQuery(UserQuery userQuery){
+        return userService.pageQuery(userQuery);
     }
 
 }
