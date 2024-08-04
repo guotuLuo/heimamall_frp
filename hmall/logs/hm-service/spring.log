@@ -1,0 +1,21 @@
+16:38:52:501  INFO 22368 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 17.0.10 on carrot66 with PID 22368 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\hm-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+16:38:52:502 DEBUG 22368 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:38:52:503  INFO 22368 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+16:38:53:096  INFO 22368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:38:53:098  INFO 22368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:38:53:120  INFO 22368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+16:38:53:641  INFO 22368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:38:53:642  INFO 22368 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+16:38:53:642  INFO 22368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:38:53:642  INFO 22368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:38:53:655  INFO 22368 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:38:53:662  INFO 22368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:38:53:663  INFO 22368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:38:53:745  INFO 22368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:38:53:746  INFO 22368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1206 ms
+16:38:54:813  INFO 22368 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:38:55:140  INFO 22368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+16:38:55:141  INFO 22368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:38:55:143  INFO 22368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:38:55:166  INFO 22368 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:38:55:292  INFO 22368 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.11 seconds (JVM running for 3.501)
