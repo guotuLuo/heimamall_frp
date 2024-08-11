@@ -1,0 +1,385 @@
+18:08:48:802  INFO 10728 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 10728 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:08:48:804  INFO 10728 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:08:49:286  INFO 10728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:08:49:289  INFO 10728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:08:49:308  INFO 10728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+18:08:49:688  INFO 10728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:08:49:689  INFO 10728 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:08:49:689  INFO 10728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:08:49:689  INFO 10728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:08:49:692  INFO 10728 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:08:49:698  INFO 10728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:08:49:698  INFO 10728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:08:49:777  INFO 10728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:08:49:777  INFO 10728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
+18:08:50:317  INFO 10728 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:08:50:555  INFO 10728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:08:50:556  INFO 10728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:08:50:558  INFO 10728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:08:50:573  INFO 10728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:08:50:581  INFO 10728 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.054 seconds (JVM running for 2.483)
+18:08:52:889  INFO 10728 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:08:52:889  INFO 10728 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:08:52:890  INFO 10728 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+18:10:30:738  INFO 18608 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 18608 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:10:30:739  INFO 18608 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:10:31:237  INFO 18608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:10:31:239  INFO 18608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:10:31:252  INFO 18608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:10:31:637  INFO 18608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:10:31:638  INFO 18608 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:10:31:638  INFO 18608 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:10:31:639  INFO 18608 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:10:31:642  INFO 18608 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:10:31:647  INFO 18608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:10:31:648  INFO 18608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:10:31:738  INFO 18608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:10:31:738  INFO 18608 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 963 ms
+18:10:32:329  INFO 18608 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:10:32:574  INFO 18608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:10:32:574  INFO 18608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:10:32:576  INFO 18608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:10:32:594  INFO 18608 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:10:32:667  INFO 18608 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.241 seconds (JVM running for 2.624)
+18:10:37:739  INFO 18608 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:10:37:743  INFO 18608 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:10:37:744  INFO 18608 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:11:09:510  WARN 18608 --- [http-nio-8082-exec-4] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:11:09:523  INFO 18608 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:11:10:079  INFO 18608 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:13:49:996  INFO 18608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:13:50:289  INFO 18608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:13:52:230  INFO 7728 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 7728 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:13:52:233  INFO 7728 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:13:52:829  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:13:52:831  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:13:52:847  INFO 7728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:13:53:243  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:13:53:244  INFO 7728 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:13:53:244  INFO 7728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:13:53:244  INFO 7728 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:13:53:247  INFO 7728 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:13:53:253  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:13:53:253  INFO 7728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:13:53:331  INFO 7728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:13:53:331  INFO 7728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1052 ms
+18:13:53:895  INFO 7728 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:13:54:162  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:13:54:164  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:13:54:168  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:13:54:185  INFO 7728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:13:54:250  INFO 7728 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.443 seconds (JVM running for 2.92)
+18:14:05:858  INFO 7728 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:05:862  INFO 7728 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:14:05:862  INFO 7728 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+18:14:05:922  WARN 7728 --- [http-nio-8082-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:14:05:934  INFO 7728 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:14:06:486  INFO 7728 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:15:25:378  WARN 7728 --- [http-nio-8082-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void com.heima.cart.controller.CartController.addItem2Cart(com.heima.cart.domain.dto.CartFormDTO)]
+18:16:40:938  INFO 7728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:16:41:229  INFO 7728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:16:44:435  INFO 21908 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 21908 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:16:44:437  INFO 21908 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:16:44:987  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:16:44:989  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:16:45:001  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+18:16:45:361  INFO 21908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:16:45:362  INFO 21908 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:16:45:362  INFO 21908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:16:45:362  INFO 21908 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:16:45:366  INFO 21908 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:16:45:371  INFO 21908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:16:45:371  INFO 21908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:16:45:445  INFO 21908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:16:45:445  INFO 21908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 970 ms
+18:16:45:966  INFO 21908 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:16:46:197  INFO 21908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:16:46:198  INFO 21908 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:16:46:200  INFO 21908 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:16:46:218  INFO 21908 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:16:46:278  INFO 21908 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.156 seconds (JVM running for 2.564)
+18:16:48:298  INFO 21908 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:16:48:298  INFO 21908 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:16:48:299  INFO 21908 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:16:48:354  WARN 21908 --- [http-nio-8082-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @2a4fb17b
+18:16:48:364  INFO 21908 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:16:48:884  INFO 21908 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:17:24:132  INFO 21908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:17:24:466  INFO 21908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:17:28:246  INFO 18148 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 18148 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:17:28:249  INFO 18148 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:17:28:727  INFO 18148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:17:28:729  INFO 18148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:17:28:742  INFO 18148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+18:17:29:106  INFO 18148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:17:29:106  INFO 18148 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:17:29:106  INFO 18148 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:17:29:107  INFO 18148 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:17:29:110  INFO 18148 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:17:29:115  INFO 18148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:17:29:115  INFO 18148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:17:29:186  INFO 18148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:17:29:186  INFO 18148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
+18:17:29:700  INFO 18148 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:17:29:932  INFO 18148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:17:29:933  INFO 18148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:17:29:935  INFO 18148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:17:29:950  INFO 18148 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:17:30:021  INFO 18148 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.051 seconds (JVM running for 2.407)
+18:17:38:006  INFO 18148 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:17:38:006  INFO 18148 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:17:38:007  INFO 18148 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:17:38:060  WARN 18148 --- [http-nio-8082-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:17:38:069  INFO 18148 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:17:38:624  INFO 18148 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:18:52:407  INFO 18148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:18:52:681  INFO 18148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:18:55:770  INFO 10176 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 10176 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:18:55:772  INFO 10176 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:18:56:252  INFO 10176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:18:56:254  INFO 10176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:18:56:269  INFO 10176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:18:56:621  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:18:56:621  INFO 10176 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:18:56:621  INFO 10176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:18:56:622  INFO 10176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:18:56:625  INFO 10176 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:18:56:631  INFO 10176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:18:56:632  INFO 10176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:18:56:708  INFO 10176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:18:56:709  INFO 10176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+18:18:57:236  INFO 10176 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:18:57:468  INFO 10176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:18:57:469  INFO 10176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:18:57:470  INFO 10176 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:18:57:486  INFO 10176 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:18:57:557  INFO 10176 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.095 seconds (JVM running for 2.469)
+18:19:00:221  INFO 10176 --- [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:19:00:221  INFO 10176 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:19:00:222  INFO 10176 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:19:00:271  WARN 10176 --- [http-nio-8082-exec-4] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:19:00:282  INFO 10176 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:19:00:779  INFO 10176 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:25:46:226  INFO 10176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:25:46:525  INFO 10176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:25:49:497  INFO 5960 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 5960 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:25:49:500  INFO 5960 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:25:49:969  INFO 5960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:25:49:971  INFO 5960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:25:49:986  INFO 5960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:25:50:354  INFO 5960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:25:50:355  INFO 5960 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:25:50:355  INFO 5960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:25:50:355  INFO 5960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:25:50:358  INFO 5960 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:25:50:364  INFO 5960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:25:50:364  INFO 5960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:25:50:438  INFO 5960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:25:50:438  INFO 5960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 900 ms
+18:25:50:999  INFO 5960 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:25:51:241  INFO 5960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:25:51:241  INFO 5960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:25:51:243  INFO 5960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:25:51:261  INFO 5960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:25:51:339  INFO 5960 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.185 seconds (JVM running for 2.565)
+18:25:52:338  INFO 5960 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:25:52:338  INFO 5960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:25:52:339  INFO 5960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:25:52:388  WARN 5960 --- [http-nio-8082-exec-3] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:25:52:398  INFO 5960 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:25:52:921  INFO 5960 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:38:12:859  INFO 5960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:38:13:121  INFO 5960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:44:48:948  INFO 24008 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 24008 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:44:48:950  INFO 24008 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:44:49:520  INFO 24008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:44:49:521  INFO 24008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:44:49:538  INFO 24008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:44:49:959  INFO 24008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:44:49:960  INFO 24008 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:44:49:960  INFO 24008 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:44:49:960  INFO 24008 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:44:49:972  INFO 24008 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:44:49:979  INFO 24008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:44:49:979  INFO 24008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:44:50:065  INFO 24008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:44:50:065  INFO 24008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1081 ms
+18:44:50:663  INFO 24008 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:44:50:949  INFO 24008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:44:50:951  INFO 24008 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:44:50:952  INFO 24008 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:44:50:967  INFO 24008 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:44:51:043  INFO 24008 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.419 seconds (JVM running for 2.87)
+18:44:54:476  INFO 24008 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:44:54:476  INFO 24008 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:44:54:477  INFO 24008 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:44:54:537  WARN 24008 --- [http-nio-8082-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:44:54:549  INFO 24008 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:44:55:126  INFO 24008 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:46:37:357  INFO 24008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:46:37:641  INFO 24008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:46:40:106  INFO 22624 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 22624 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:46:40:108  INFO 22624 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:46:40:596  INFO 22624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:46:40:598  INFO 22624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:46:40:611  INFO 22624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:46:40:978  INFO 22624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:46:40:979  INFO 22624 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:46:40:979  INFO 22624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:46:40:979  INFO 22624 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:46:40:982  INFO 22624 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:46:40:987  INFO 22624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:46:40:987  INFO 22624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:46:41:065  INFO 22624 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:46:41:065  INFO 22624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms
+18:46:41:602  INFO 22624 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:46:41:848  INFO 22624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:46:41:848  INFO 22624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:46:41:850  INFO 22624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:46:41:864  INFO 22624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:46:41:937  INFO 22624 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.104 seconds (JVM running for 2.531)
+18:46:47:223  INFO 22624 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:46:47:224  INFO 22624 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:46:47:224  INFO 22624 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+18:46:47:277  WARN 22624 --- [http-nio-8082-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:46:47:288  INFO 22624 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:46:47:810  INFO 22624 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:47:29:101  INFO 22624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:47:29:370  INFO 22624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:47:31:870  INFO 23716 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 23716 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:47:31:872  INFO 23716 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:47:32:357  INFO 23716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:47:32:358  INFO 23716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:47:32:374  INFO 23716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+18:47:32:739  INFO 23716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:47:32:739  INFO 23716 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:47:32:739  INFO 23716 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:47:32:740  INFO 23716 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:47:32:742  INFO 23716 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:47:32:747  INFO 23716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:47:32:747  INFO 23716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:47:32:819  INFO 23716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:47:32:819  INFO 23716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 911 ms
+18:47:33:359  INFO 23716 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:47:33:617  INFO 23716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:47:33:617  INFO 23716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:47:33:619  INFO 23716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:47:33:635  INFO 23716 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:47:33:706  INFO 23716 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.117 seconds (JVM running for 2.553)
+18:47:35:730  INFO 23716 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:47:35:731  INFO 23716 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:47:35:731  INFO 23716 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+18:47:35:784  WARN 23716 --- [http-nio-8082-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:47:35:793  INFO 23716 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:47:36:276  INFO 23716 --- [http-nio-8082-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:48:14:751  INFO 23716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:48:15:046  INFO 23716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:48:17:466  INFO 24184 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 24184 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:48:17:467  INFO 24184 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:48:17:946  INFO 24184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:48:17:948  INFO 24184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:48:17:963  INFO 24184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:48:18:337  INFO 24184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:48:18:338  INFO 24184 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:48:18:338  INFO 24184 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:48:18:339  INFO 24184 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:48:18:341  INFO 24184 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:48:18:347  INFO 24184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:48:18:348  INFO 24184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:48:18:424  INFO 24184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:48:18:424  INFO 24184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 923 ms
+18:48:18:994  INFO 24184 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:48:19:223  INFO 24184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:48:19:223  INFO 24184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:48:19:225  INFO 24184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:48:19:239  INFO 24184 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:48:19:328  INFO 24184 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.14 seconds (JVM running for 2.568)
+18:48:21:049  INFO 24184 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:48:21:050  INFO 24184 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:48:21:050  INFO 24184 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+18:48:21:102  WARN 24184 --- [http-nio-8082-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @6302bbb1
+18:48:21:112  INFO 24184 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:48:21:631  INFO 24184 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:49:45:086  INFO 24184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:49:45:355  INFO 24184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:49:50:417  INFO 9540 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 9540 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:49:50:418  INFO 9540 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:49:50:912  INFO 9540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:49:50:914  INFO 9540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:49:50:929  INFO 9540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+18:49:51:339  INFO 9540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:49:51:340  INFO 9540 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:49:51:340  INFO 9540 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:49:51:340  INFO 9540 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:49:51:344  INFO 9540 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:49:51:352  INFO 9540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:49:51:353  INFO 9540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:49:51:438  INFO 9540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:49:51:438  INFO 9540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 987 ms
+18:49:51:956  INFO 9540 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:49:52:204  INFO 9540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:49:52:205  INFO 9540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:49:52:206  INFO 9540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:49:52:223  INFO 9540 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:49:52:286  INFO 9540 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.151 seconds (JVM running for 2.517)
+18:49:55:980  INFO 9540 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:49:55:980  INFO 9540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:49:55:981  INFO 9540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:49:56:054  INFO 9540 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:49:56:598  INFO 9540 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:52:21:348  INFO 9540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:52:21:614  INFO 9540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:52:24:356  INFO 7640 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 7640 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:52:24:358  INFO 7640 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:52:24:892  INFO 7640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:52:24:894  INFO 7640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:52:24:907  INFO 7640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+18:52:25:268  INFO 7640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:52:25:269  INFO 7640 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:52:25:269  INFO 7640 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:52:25:269  INFO 7640 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:52:25:272  INFO 7640 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:52:25:277  INFO 7640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:52:25:277  INFO 7640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:52:25:354  INFO 7640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:52:25:354  INFO 7640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+18:52:25:894  INFO 7640 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:52:26:139  INFO 7640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:52:26:140  INFO 7640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:52:26:142  INFO 7640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:52:26:157  INFO 7640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:52:26:221  INFO 7640 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.178 seconds (JVM running for 2.56)
+18:52:28:667  INFO 7640 --- [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:52:28:667  INFO 7640 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:52:28:668  INFO 7640 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:52:28:750  INFO 7640 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:52:29:262  INFO 7640 --- [http-nio-8082-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:54:14:370  INFO 7640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:54:14:625  INFO 7640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:54:17:631  INFO 25540 --- [main] com.heima.cart.CartallApplication        : Starting CartallApplication using Java 17.0.10 on carrot66 with PID 25540 (C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall\cart-service\target\classes started by guotuluo in C:\Users\guotuluo\Desktop\Set\moveBrick\heimamall\hmall)
+18:54:17:633  INFO 25540 --- [main] com.heima.cart.CartallApplication        : The following 1 profile is active: "local"
+18:54:18:127  INFO 25540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:54:18:129  INFO 25540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:54:18:142  INFO 25540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+18:54:18:497  INFO 25540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+18:54:18:498  INFO 25540 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+18:54:18:498  INFO 25540 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:54:18:498  INFO 25540 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:54:18:502  INFO 25540 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:54:18:509  INFO 25540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:54:18:509  INFO 25540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:54:18:585  INFO 25540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:54:18:585  INFO 25540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 915 ms
+18:54:19:115  INFO 25540 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:54:19:360  INFO 25540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+18:54:19:361  INFO 25540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:54:19:362  INFO 25540 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:54:19:377  INFO 25540 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:54:19:435  INFO 25540 --- [main] com.heima.cart.CartallApplication        : Started CartallApplication in 2.172 seconds (JVM running for 2.546)
+18:54:20:717  INFO 25540 --- [http-nio-8082-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:54:20:717  INFO 25540 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:54:20:719  INFO 25540 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+18:54:20:796  INFO 25540 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:54:21:335  INFO 25540 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:58:03:946  INFO 25540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:58:04:257  INFO 25540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
