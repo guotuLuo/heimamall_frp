@@ -1,23 +1,36 @@
 package com.heima.cart.service.impl;
 
+import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.heima.api.client.ItemOpenFeignClient;
+import com.heima.api.domain.dto.ItemDTO;
+import com.heima.cart.Client.OpenFeignClient;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import com.heima.cart.domain.dto.CartFormDTO;
-import com.heima.cart.domain.dto.ItemDTO;
 import com.heima.cart.domain.po.Cart;
 import com.heima.cart.domain.vo.CartVO;
 import com.heima.cart.mapper.CartMapper;
 import com.heima.cart.service.ICartService;
 //import com.heima.cart.service.IItemService;
 import lombok.RequiredArgsConstructor;
-import org.apache.catalina.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +49,12 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements ICartService {
+//    public final RestTemplate restTemplate;
 
+//    public final DiscoveryClient discoveryClient;
+
+    public final ItemOpenFeignClient itemOpenFeignClient;
+//    @Autowired
 //    private final IItemService itemService;
 
     @Override
@@ -66,6 +84,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     public List<CartVO> queryMyCarts() {
         // 1.查询我的购物车列表
         // 为什么查询为空
+
+
         UserContext.setUser(1L);
         List<Cart> carts = lambdaQuery().eq(Cart::getUserId, UserContext.getUser()).list();
         System.out.println(carts);
@@ -85,7 +105,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private void handleCartItems(List<CartVO> vos) {
         // TODO 1.获取商品id
-//        Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
+        Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
 //        // 2.查询商品
 //        List<ItemDTO> items = itemService.queryItemByIds(itemIds);
 //        if (CollUtils.isEmpty(items)) {
@@ -103,6 +123,50 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //            v.setStatus(item.getStatus());
 //            v.setStock(item.getStock());
 //        }
+
+//        // TODO 1 利用RestTemplte 查询商品id
+//        Set<Long> itemsId = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
+//
+//        // 利用DiscoveryClient 获得所有item-service的服务列表
+//        List<ServiceInstance> instances = discoveryClient.getInstances("item-service");
+//        if(CollUtils.isEmpty(instances)){
+//            return;
+//        }
+//        ServiceInstance serviceInstance = instances.get(RandomUtil.randomInt(instances.size()));
+//        // TODO 2 利用从购物车数据库中获取到的商品名称，从其他服务端获取商品
+//        ResponseEntity<List<ItemDTO>> response = restTemplate.exchange(
+//                // 这种写法写死了url,
+//                // "https://locahost:8081/item/items/ids={ids}",
+//                serviceInstance.getUri() + "/items?ids={ids}",
+//                HttpMethod.GET,
+//                null,
+//                new ParameterizedTypeReference<List<ItemDTO>>() {
+//                },
+//                Map.of("ids", CollUtils.join(itemsId, ","))
+//        );
+//
+//        if(!response.getStatusCode().is2xxSuccessful()){
+//            return;
+//        }
+//        List<ItemDTO> body = response.getBody();
+
+        List<ItemDTO> body = itemOpenFeignClient.queryItemByIds(itemIds);
+
+        if (CollUtils.isEmpty(body)) {
+            return;
+        }
+        // 3.转为 id 到 item的map
+        Map<Long, ItemDTO> itemMap = body.stream().collect(Collectors.toMap(ItemDTO::getId, Function.identity()));
+        // 4.写入vo
+        for (CartVO v : vos) {
+            ItemDTO item = itemMap.get(v.getItemId());
+            if (item == null) {
+                continue;
+            }
+            v.setNewPrice(item.getPrice());
+            v.setStatus(item.getStatus());
+            v.setStock(item.getStock());
+        }
     }
 
     @Override
