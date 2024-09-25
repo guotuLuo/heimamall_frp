@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.heima.api.client.ItemOpenFeignClient;
 import com.heima.api.domain.dto.ItemDTO;
-import com.heima.cart.Client.OpenFeignClient;
+import com.heima.cart.config.CartProperties;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.CollUtils;
@@ -16,28 +16,16 @@ import com.heima.cart.domain.po.Cart;
 import com.heima.cart.domain.vo.CartVO;
 import com.heima.cart.mapper.CartMapper;
 import com.heima.cart.service.ICartService;
-//import com.heima.cart.service.IItemService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.client.RestTemplate;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * <p>
  * 订单详情表 服务实现类
@@ -48,10 +36,13 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
+
 public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements ICartService {
 //    public final RestTemplate restTemplate;
 
 //    public final DiscoveryClient discoveryClient;
+
+    public final CartProperties cartProperties;
 
     public final ItemOpenFeignClient itemOpenFeignClient;
 //    @Autowired
@@ -84,11 +75,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     public List<CartVO> queryMyCarts() {
         // 1.查询我的购物车列表
         // 为什么查询为空
-
-
-        UserContext.setUser(1L);
+        System.out.println(UserContext.getUser());
         List<Cart> carts = lambdaQuery().eq(Cart::getUserId, UserContext.getUser()).list();
-        System.out.println(carts);
         if (CollUtils.isEmpty(carts)) {
             return CollUtils.emptyList();
         }
@@ -101,6 +89,18 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
         // 4.返回
         return vos;
+    }
+
+
+    // 这个需要改一下，这里删除购物车里的货物不生效
+    @Override
+    public void removeByItemId(Long itemId) {
+        QueryWrapper<Cart> queryWrapper = new QueryWrapper<Cart>();
+        queryWrapper.lambda()
+                .eq(Cart::getUserId, UserContext.getUser())
+                .eq(Cart::getItemId, itemId);
+        // 2.删除
+        remove(queryWrapper);
     }
 
     private void handleCartItems(List<CartVO> vos) {
@@ -182,8 +182,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private void checkCartsFull(Long userId) {
         int count = Math.toIntExact(lambdaQuery().eq(Cart::getUserId, userId).count());
-        if (count >= 10) {
-            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", 10));
+        if (count >= cartProperties.getMaxAmount()) {
+            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", cartProperties.getMaxAmount()));
         }
     }
 

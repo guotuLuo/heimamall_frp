@@ -3,6 +3,7 @@ package com.heima.item.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.heima.item.domain.po.Item;
 import com.heima.item.domain.dto.OrderDetailDTO;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Update;
 
 /**

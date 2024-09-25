@@ -18,9 +18,10 @@ import java.util.List;
  */
 public interface ICartService extends IService<Cart> {
 
-    void addItem2Cart(CartFormDTO cartFormDTO);
+    void addItem2Cart(CartFormDTO cartFormDTO) throws Exception;
 
     List<CartVO> queryMyCarts();
 
+    void removeByItemId(Long itemId);
     void removeByItemIds(Collection<Long> itemIds);
 }

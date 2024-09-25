@@ -1,13 +1,11 @@
-package com.hmall.controller;
-
-
+package com.heima.user.controller;
+import com.heima.user.service.IAddressService;
 import com.hmall.common.exception.BadRequestException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
-import com.hmall.domain.dto.AddressDTO;
-import com.hmall.domain.po.Address;
-import com.hmall.service.IAddressService;
+import com.heima.user.domain.dto.AddressDTO;
+import com.heima.user.domain.po.Address;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

@@ -1,0 +1,230 @@
+22:10:50:504  INFO 11980 --- [main] com.heima.user.UserApplication           : The following 1 profile is active: "dev"
+22:10:50:975  INFO 11980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:10:50:976  INFO 11980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:10:50:990  INFO 11980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+22:10:51:141  INFO 11980 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c85f9b6d-02ba-3282-9350-83d568552f40
+22:10:51:429  INFO 11980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+22:10:51:429  INFO 11980 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+22:10:51:430  INFO 11980 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:10:51:430  INFO 11980 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:10:51:433  INFO 11980 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+22:10:51:441  INFO 11980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:10:51:441  INFO 11980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:10:51:509  INFO 11980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:10:51:509  INFO 11980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
+22:10:52:236 DEBUG 11980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+22:10:52:336 DEBUG 11980 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+22:10:52:374 DEBUG 11980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+22:10:52:383 DEBUG 11980 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+22:10:52:486  INFO 11980 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:10:52:951  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of fa81b342-d799-459b-a455-9bc0fd929163
+22:10:52:951  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] RpcClient init label, labels = {module=naming, source=sdk}
+22:10:52:952  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+22:10:52:953  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+22:10:52:953  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:10:52:953  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Try to connect to server on start up, server: {serverIp = '39.105.132.218', server main port = 8848}
+22:10:53:143  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Success to connect to server [39.105.132.218:8848] on start up, connectionId = 1727187053034_113.140.11.124_51685
+22:10:53:143  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:10:53:143  INFO 11980 --- [main] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$482/0x000002d02a4d6350
+22:10:53:143  INFO 11980 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Notify connected event to listeners.
+22:10:53:207  INFO 11980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+22:10:53:240  INFO 11980 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 10.198.6.11:8084 register finished
+22:10:53:299  INFO 11980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:10:53:301  INFO 11980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:10:53:313  INFO 11980 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:10:53:373  INFO 11980 --- [main] com.heima.user.UserApplication           : Started UserApplication in 4.777 seconds (JVM running for 5.188)
+22:10:53:376  INFO 11980 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+22:10:53:377  INFO 11980 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
+22:10:53:377  INFO 11980 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
+22:10:53:699  INFO 11980 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Receive server push request, request = NotifySubscriberRequest, requestId = 12
+22:10:53:705  INFO 11980 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fa81b342-d799-459b-a455-9bc0fd929163] Ack server push request, request = NotifySubscriberRequest, requestId = 12
+22:11:02:525  INFO 11980 --- [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:11:02:525  INFO 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:11:02:525 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+22:11:02:525 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+22:11:02:525 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+22:11:02:526 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@147087fc
+22:11:02:526 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5bb87313
+22:11:02:526 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:11:02:526  INFO 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+22:11:02:534 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/users/login", parameters={}
+22:11:02:537 DEBUG 11980 --- [http-nio-8084-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.UserController#login(LoginFormDTO)
+22:11:02:555 DEBUG 11980 --- [http-nio-8084-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginFormDTO(username=jack, password=123, rememberMe=false)]
+22:11:02:654  INFO 11980 --- [http-nio-8084-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:11:04:215  INFO 11980 --- [http-nio-8084-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:11:04:222 DEBUG 11980 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+22:11:04:239 DEBUG 11980 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+22:11:04:300 DEBUG 11980 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+22:11:04:423 DEBUG 11980 --- [http-nio-8084-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:11:04:425 DEBUG 11980 --- [http-nio-8084-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [UserLoginVO(token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoxLCJleHAiOjE3MjcxODg4NjR9.M9z5gkkK (truncated)...]
+22:11:04:435 DEBUG 11980 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+22:11:44:611 DEBUG 11980 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/users/login", parameters={}
+22:11:44:612 DEBUG 11980 --- [http-nio-8084-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.UserController#login(LoginFormDTO)
+22:11:44:612 DEBUG 11980 --- [http-nio-8084-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginFormDTO(username=jack, password=123, rememberMe=false)]
+22:11:44:645 DEBUG 11980 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+22:11:44:646 DEBUG 11980 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+22:11:44:671 DEBUG 11980 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
+22:11:44:748 DEBUG 11980 --- [http-nio-8084-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:11:44:748 DEBUG 11980 --- [http-nio-8084-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [UserLoginVO(token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoxLCJleHAiOjE3MjcxODg5MDR9.PnEX8DxT (truncated)...]
+22:11:44:748 DEBUG 11980 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+22:11:57:509 DEBUG 11980 --- [http-nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/addresses", parameters={}
+22:11:57:511 DEBUG 11980 --- [http-nio-8084-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.AddressController#findMyAddresses()
+22:11:57:543 DEBUG 11980 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:11:57:543 DEBUG 11980 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+22:11:57:575 DEBUG 11980 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+22:11:57:591 DEBUG 11980 --- [http-nio-8084-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:11:57:595 DEBUG 11980 --- [http-nio-8084-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[AddressDTO(id=59, province=北京, city=北京, town=朝阳区, mobile=13900112222, street=金燕龙办公楼, contact=李嘉诚, i (truncated)...]
+22:11:57:596 DEBUG 11980 --- [http-nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+22:12:07:599 DEBUG 11980 --- [http-nio-8084-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/addresses", parameters={}
+22:12:07:600 DEBUG 11980 --- [http-nio-8084-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.AddressController#findMyAddresses()
+22:12:07:625 DEBUG 11980 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:12:07:626 DEBUG 11980 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+22:12:07:656 DEBUG 11980 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+22:12:07:657 DEBUG 11980 --- [http-nio-8084-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:12:07:657 DEBUG 11980 --- [http-nio-8084-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[AddressDTO(id=59, province=北京, city=北京, town=朝阳区, mobile=13900112222, street=金燕龙办公楼, contact=李嘉诚, i (truncated)...]
+22:12:07:658 DEBUG 11980 --- [http-nio-8084-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+22:32:53:732 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/addresses", parameters={}
+22:32:53:732 DEBUG 11980 --- [http-nio-8084-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.AddressController#findMyAddresses()
+22:33:03:767  WARN 11980 --- [http-nio-8084-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@566c60d9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+22:33:13:787  WARN 11980 --- [http-nio-8084-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@55b9a64e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+22:33:23:811  WARN 11980 --- [http-nio-8084-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b86d6c4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+22:33:23:814 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+### The error may exist in com/heima/user/mapper/AddressMapper.java (best guess)
+### The error may involve com.heima.user.mapper.AddressMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+22:33:23:818 ERROR 11980 --- [http-nio-8084-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+### The error may exist in com/heima/user/mapper/AddressMapper.java (best guess)
+### The error may involve com.heima.user.mapper.AddressMapper.selectList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.] with root cause
+
+com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2491) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:566) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:173) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:186) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:162) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.27.jar:5.3.27]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.27.jar:5.3.27]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.27.jar:5.3.27]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.1.2.jar:2.1.2]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.1.2.jar:2.1.2]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110) ~[mybatis-3.5.16.jar:3.5.16]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59) ~[mybatis-3.5.16.jar:3.5.16]
+	at jdk.proxy2/jdk.proxy2.$Proxy147.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.16.jar:3.5.16]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142) ~[mybatis-3.5.16.jar:3.5.16]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-2.1.2.jar:2.1.2]
+	at jdk.proxy2/jdk.proxy2.$Proxy100.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.1.2.jar:2.1.2]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:164) ~[mybatis-plus-core-3.5.7.jar:3.5.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.7.jar:3.5.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152) ~[mybatis-plus-core-3.5.7.jar:3.5.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.7.jar:3.5.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy104.selectList(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.lambda$list$1d3f6527$1(ChainQuery.java:39) ~[mybatis-plus-extension-3.5.7.jar:3.5.7]
+	at com.baomidou.mybatisplus.extension.conditions.ChainWrapper.execute(ChainWrapper.java:63) ~[mybatis-plus-extension-3.5.7.jar:3.5.7]
+	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.list(ChainQuery.java:39) ~[mybatis-plus-extension-3.5.7.jar:3.5.7]
+	at com.heima.user.controller.AddressController.findMyAddresses(AddressController.java:51) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+22:33:23:822 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+22:33:23:824 DEBUG 11980 --- [http-nio-8084-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+22:33:23:827 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:33:23:827 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Sep 24 22:33:23 CST 2024, status=500, error=Internal Server Error, path=/addresses}]
+22:33:23:829 DEBUG 11980 --- [http-nio-8084-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+22:41:01:713 DEBUG 11980 --- [http-nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/addresses", parameters={}
+22:41:01:715 DEBUG 11980 --- [http-nio-8084-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.heima.user.controller.AddressController#findMyAddresses()
+22:41:11:734  WARN 11980 --- [http-nio-8084-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@937cb56 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+22:41:11:757 DEBUG 11980 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+22:41:11:757 DEBUG 11980 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+22:41:11:793 DEBUG 11980 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+22:41:11:795 DEBUG 11980 --- [http-nio-8084-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+22:41:11:795 DEBUG 11980 --- [http-nio-8084-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[AddressDTO(id=59, province=北京, city=北京, town=朝阳区, mobile=13900112222, street=金燕龙办公楼, contact=李嘉诚, i (truncated)...]
+22:41:11:796 DEBUG 11980 --- [http-nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+23:20:17:520  WARN 11980 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+23:20:17:520  WARN 11980 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+23:20:17:520  WARN 11980 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+23:20:17:522  WARN 11980 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+23:20:17:600  INFO 11980 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+23:20:17:628  INFO 11980 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+23:20:17:950  INFO 11980 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+23:20:17:950  INFO 11980 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4a7b2e88[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+23:20:17:950  INFO 11980 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727187053034_113.140.11.124_51685
+23:20:17:951  INFO 11980 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@30069c31[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 844]
+23:20:17:959  INFO 11980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+23:20:18:218  INFO 11980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

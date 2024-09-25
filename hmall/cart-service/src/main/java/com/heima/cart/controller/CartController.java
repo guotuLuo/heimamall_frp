@@ -24,7 +24,7 @@ public class CartController {
 
     @ApiOperation("添加商品到购物车")
     @PostMapping
-    public void addItem2Cart(@Valid @RequestBody CartFormDTO cartFormDTO){
+    public void addItem2Cart(@Valid @RequestBody CartFormDTO cartFormDTO) throws Exception{
         cartService.addItem2Cart(cartFormDTO);
     }
 
