@@ -1,0 +1,15 @@
+server:
+  port: 8085
+
+feign:
+  okhttp:
+    enabled: true
+
+hm:
+  db:
+    database: hm-trade
+
+  swagger:
+    package: com.heima.trade.controller
+
+

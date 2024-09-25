@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+
+feign:
+  okhttp:
+    enabled: true
+
+hm:
+  db:
+    database: hm-item
+
+  swagger:
+    package: com.heima.item.controller
