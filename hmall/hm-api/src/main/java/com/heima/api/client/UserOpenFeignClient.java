@@ -1,6 +1,7 @@
 package com.heima.api.client;
 
 import com.heima.api.config.OpenFeignLoggerLevelConfiguration;
+import com.heima.api.fallbackfactory.UserFeignFallBackFactory;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Collection;
 
-@FeignClient(value = "user-service", configuration = OpenFeignLoggerLevelConfiguration.class)
+@FeignClient(value = "user-service", configuration = OpenFeignLoggerLevelConfiguration.class, fallbackFactory = UserFeignFallBackFactory.class)
 public interface UserOpenFeignClient {
     @PutMapping("/users/money/deduct")
     public void deductMoney(@RequestParam("pw") String pw,@RequestParam("amount") Integer amount);

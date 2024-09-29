@@ -1,5 +1,9 @@
 package com.heima.api.config;
 
+import com.heima.api.fallbackfactory.CartFeignFallBackFactory;
+import com.heima.api.fallbackfactory.ItemFeignFallBackFactory;
+import com.heima.api.fallbackfactory.TradeFeignFallBackFactory;
+import com.heima.api.fallbackfactory.UserFeignFallBackFactory;
 import com.hmall.common.utils.UserContext;
 import feign.Logger;
 import feign.RequestInterceptor;
@@ -25,4 +29,23 @@ public class OpenFeignLoggerLevelConfiguration {
         };
     }
 
+    @Bean
+    public CartFeignFallBackFactory cartFeignFallBackFactory(){
+        return new CartFeignFallBackFactory();
+    }
+
+    @Bean
+    public ItemFeignFallBackFactory itemFeignFallBackFactory(){
+        return new ItemFeignFallBackFactory();
+    }
+
+    @Bean
+    public TradeFeignFallBackFactory tradeFeignFallBackFactory(){
+        return new TradeFeignFallBackFactory();
+    }
+
+    @Bean
+    public UserFeignFallBackFactory userFeignFallBackFactory(){
+        return new UserFeignFallBackFactory();
+    }
 }

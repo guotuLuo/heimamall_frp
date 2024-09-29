@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: hm-gateway
+  cloud:
+    nacos:
+      server-addr: 39.105.132.218:8848
+
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.loadbalancer: DEBUG

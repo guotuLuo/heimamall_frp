@@ -1,0 +1,345 @@
+21:26:18:832  INFO 21336 --- [main] com.heima.gateway.GateWayApplication     : No active profile set, falling back to 1 default profile: "default"
+21:26:19:320  INFO 21336 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2a1d4158-238a-31da-8370-b446fbcd9be0
+21:26:19:373  INFO 21336 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:26:19:374  INFO 21336 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:26:19:375  INFO 21336 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:26:20:294  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+21:26:20:295  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+21:26:20:296  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+21:26:20:296  INFO 21336 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:26:20:353 DEBUG 21336 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21:26:20:376 DEBUG 21336 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+21:26:20:387 DEBUG 21336 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:26:20:580  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 83ad04d6-8e6b-4185-9b87-cc46e5bcdaed
+21:26:20:580  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] RpcClient init label, labels = {module=naming, source=sdk}
+21:26:20:581  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+21:26:20:581  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+21:26:20:581  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+21:26:20:582  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Try to connect to server on start up, server: {serverIp = '39.105.132.218', server main port = 8848}
+21:26:20:801  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Success to connect to server [39.105.132.218:8848] on start up, connectionId = 1727357179882_113.200.174.47_34303
+21:26:20:801  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+21:26:20:801  INFO 21336 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Notify connected event to listeners.
+21:26:20:801  INFO 21336 --- [main] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$473/0x00000215874e6350
+21:26:20:949  INFO 21336 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+21:26:21:107  INFO 21336 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway 10.198.161.13:8080 register finished
+21:26:21:118  INFO 21336 --- [main] com.heima.gateway.GateWayApplication     : Started GateWayApplication in 4.177 seconds (JVM running for 4.656)
+21:26:21:122  INFO 21336 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway.yaml, group=DEFAULT_GROUP
+21:26:21:122  INFO 21336 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway, group=DEFAULT_GROUP
+21:26:21:425  INFO 21336 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Receive server push request, request = NotifySubscriberRequest, requestId = 5
+21:26:21:428  INFO 21336 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [83ad04d6-8e6b-4185-9b87-cc46e5bcdaed] Ack server push request, request = NotifySubscriberRequest, requestId = 5
+21:26:26:590 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-1] HTTP POST "/users/login"
+21:26:26:600 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-1] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:26:602 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-1] Resource not found
+21:26:26:615 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-1] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:26:623 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-1] Encoding [{timestamp=Thu Sep 26 21:26:26 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:26:633 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-1] Completed 404 NOT_FOUND
+21:26:31:624 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-2] HTTP POST "/users/login"
+21:26:31:624 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-2] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:31:625 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-2] Resource not found
+21:26:31:625 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-2] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:31:625 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-2] Encoding [{timestamp=Thu Sep 26 21:26:31 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:31:626 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-2] Completed 404 NOT_FOUND
+21:26:33:419 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-3] HTTP POST "/users/login"
+21:26:33:420 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-3] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:33:421 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-3] Resource not found
+21:26:33:422 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-3] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:33:422 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-3] Encoding [{timestamp=Thu Sep 26 21:26:33 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:33:424 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-3] Completed 404 NOT_FOUND
+21:26:33:507 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-4] HTTP POST "/users/login"
+21:26:33:508 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-4] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:33:510 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-4] Resource not found
+21:26:33:511 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-4] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:33:511 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-4] Encoding [{timestamp=Thu Sep 26 21:26:33 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:33:512 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-4] Completed 404 NOT_FOUND
+21:26:33:653 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-5] HTTP POST "/users/login"
+21:26:33:654 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-5] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:33:654 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-5] Resource not found
+21:26:33:655 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-5] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:33:655 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-5] Encoding [{timestamp=Thu Sep 26 21:26:33 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:33:657 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-5] Completed 404 NOT_FOUND
+21:26:33:826 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-6] HTTP POST "/users/login"
+21:26:33:826 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-6] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:33:826 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-6] Resource not found
+21:26:33:827 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-6] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:33:827 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-6] Encoding [{timestamp=Thu Sep 26 21:26:33 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:33:828 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-6] Completed 404 NOT_FOUND
+21:26:33:970 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-7] HTTP POST "/users/login"
+21:26:33:970 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-7] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:33:971 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-7] Resource not found
+21:26:33:971 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-7] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:33:971 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-7] Encoding [{timestamp=Thu Sep 26 21:26:33 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:33:972 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-7] Completed 404 NOT_FOUND
+21:26:42:571 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-8] HTTP POST "/users/login"
+21:26:42:571 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-8] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:42:572 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-8] Resource not found
+21:26:42:573 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-8] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:42:573 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-8] Encoding [{timestamp=Thu Sep 26 21:26:42 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:42:574 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-8] Completed 404 NOT_FOUND
+21:26:48:945 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-9] HTTP POST "/users/login"
+21:26:48:945 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4c989353-9] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:26:48:946 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [4c989353-9] Resource not found
+21:26:48:946 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-9] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:26:48:947 DEBUG 21336 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [4c989353-9] Encoding [{timestamp=Thu Sep 26 21:26:48 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:26:48:948 DEBUG 21336 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4c989353-9] Completed 404 NOT_FOUND
+21:29:48:426 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-10] HTTP POST "/users/login"
+21:29:48:428 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [26e4e662-10] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:29:48:430 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [26e4e662-10] Resource not found
+21:29:48:431 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-10] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:29:48:432 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-10] Encoding [{timestamp=Thu Sep 26 21:29:48 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:29:48:435 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-10] Completed 404 NOT_FOUND
+21:30:05:025 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-11] HTTP POST "/users/login"
+21:30:05:025 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [26e4e662-11] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:30:05:026 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [26e4e662-11] Resource not found
+21:30:05:026 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-11] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:30:05:027 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-11] Encoding [{timestamp=Thu Sep 26 21:30:05 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:30:05:028 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-11] Completed 404 NOT_FOUND
+21:30:05:194 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-12] HTTP POST "/users/login"
+21:30:05:195 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [26e4e662-12] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:30:05:196 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [26e4e662-12] Resource not found
+21:30:05:197 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-12] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:30:05:197 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-12] Encoding [{timestamp=Thu Sep 26 21:30:05 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:30:05:198 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-12] Completed 404 NOT_FOUND
+21:30:05:321 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-13] HTTP POST "/users/login"
+21:30:05:322 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [26e4e662-13] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:30:05:324 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [26e4e662-13] Resource not found
+21:30:05:324 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-13] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:30:05:325 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-13] Encoding [{timestamp=Thu Sep 26 21:30:05 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:30:05:325 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-13] Completed 404 NOT_FOUND
+21:30:05:473 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-14] HTTP POST "/users/login"
+21:30:05:474 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [26e4e662-14] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:30:05:475 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [26e4e662-14] Resource not found
+21:30:05:476 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-14] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:30:05:477 DEBUG 21336 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [26e4e662-14] Encoding [{timestamp=Thu Sep 26 21:30:05 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:30:05:477 DEBUG 21336 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [26e4e662-14] Completed 404 NOT_FOUND
+21:32:04:873 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [69846a2e-15] HTTP POST "/users/login"
+21:32:04:874 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.r.handler.SimpleUrlHandlerMapping  : [69846a2e-15] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:32:04:874 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.r.resource.ResourceWebHandler      : [69846a2e-15] Resource not found
+21:32:04:875 DEBUG 21336 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [69846a2e-15] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:32:04:875 DEBUG 21336 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [69846a2e-15] Encoding [{timestamp=Thu Sep 26 21:32:04 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:32:04:877 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [69846a2e-15] Completed 404 NOT_FOUND
+21:32:05:697 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [69846a2e-16] HTTP POST "/users/login"
+21:32:05:697 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.r.handler.SimpleUrlHandlerMapping  : [69846a2e-16] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:32:05:698 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.r.resource.ResourceWebHandler      : [69846a2e-16] Resource not found
+21:32:05:698 DEBUG 21336 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [69846a2e-16] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:32:05:698 DEBUG 21336 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [69846a2e-16] Encoding [{timestamp=Thu Sep 26 21:32:05 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:32:05:700 DEBUG 21336 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [69846a2e-16] Completed 404 NOT_FOUND
+21:32:56:398 DEBUG 21336 --- [reactor-http-nio-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [aa8f6251-17] HTTP POST "/users/login"
+21:32:56:398 DEBUG 21336 --- [reactor-http-nio-5] o.s.w.r.handler.SimpleUrlHandlerMapping  : [aa8f6251-17] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:32:56:399 DEBUG 21336 --- [reactor-http-nio-5] o.s.w.r.resource.ResourceWebHandler      : [aa8f6251-17] Resource not found
+21:32:56:399 DEBUG 21336 --- [reactor-http-nio-5] org.springframework.web.HttpLogging      : [aa8f6251-17] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:32:56:399 DEBUG 21336 --- [reactor-http-nio-5] org.springframework.web.HttpLogging      : [aa8f6251-17] Encoding [{timestamp=Thu Sep 26 21:32:56 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:32:56:400 DEBUG 21336 --- [reactor-http-nio-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [aa8f6251-17] Completed 404 NOT_FOUND
+21:33:47:002  WARN 21336 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:33:47:003  WARN 21336 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:33:47:003  WARN 21336 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:33:47:004  WARN 21336 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:33:47:041  INFO 21336 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+21:33:47:070  INFO 21336 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+21:33:47:400  INFO 21336 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+21:33:47:400  INFO 21336 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@77057024[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+21:33:47:400  INFO 21336 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727357179882_113.200.174.47_34303
+21:33:47:406  INFO 21336 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@7e168ed8[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 104]
+21:33:55:020  INFO 16460 --- [main] com.heima.gateway.GateWayApplication     : No active profile set, falling back to 1 default profile: "default"
+21:33:55:375  INFO 16460 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2a1d4158-238a-31da-8370-b446fbcd9be0
+21:33:55:418  INFO 16460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:33:55:418  INFO 16460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:33:55:420  INFO 16460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:33:56:268  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+21:33:56:269  INFO 16460 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:33:56:313 DEBUG 16460 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21:33:56:334 DEBUG 16460 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+21:33:56:346 DEBUG 16460 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:33:56:531  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of c110d289-cd1e-4cbf-baa3-b3f7f1a06545
+21:33:56:532  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] RpcClient init label, labels = {module=naming, source=sdk}
+21:33:56:533  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+21:33:56:533  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+21:33:56:533  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+21:33:56:534  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Try to connect to server on start up, server: {serverIp = '39.105.132.218', server main port = 8848}
+21:33:56:781  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Success to connect to server [39.105.132.218:8848] on start up, connectionId = 1727357635837_113.200.174.47_34308
+21:33:56:781  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+21:33:56:781  INFO 16460 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Notify connected event to listeners.
+21:33:56:781  INFO 16460 --- [main] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$473/0x0000015fd14e6148
+21:33:56:963  INFO 16460 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+21:33:57:119  INFO 16460 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway 10.198.161.13:8080 register finished
+21:33:57:127  INFO 16460 --- [main] com.heima.gateway.GateWayApplication     : Started GateWayApplication in 3.961 seconds (JVM running for 4.379)
+21:33:57:130  INFO 16460 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway.yaml, group=DEFAULT_GROUP
+21:33:57:131  INFO 16460 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway, group=DEFAULT_GROUP
+21:33:57:392  INFO 16460 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Receive server push request, request = NotifySubscriberRequest, requestId = 7
+21:33:57:401  INFO 16460 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [c110d289-cd1e-4cbf-baa3-b3f7f1a06545] Ack server push request, request = NotifySubscriberRequest, requestId = 7
+21:34:48:881 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-1] HTTP POST "/users/login"
+21:34:48:890 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-1] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:48:892 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-1] Resource not found
+21:34:48:902 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-1] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:48:910 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-1] Encoding [{timestamp=Thu Sep 26 21:34:48 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:48:919 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-1] Completed 404 NOT_FOUND
+21:34:50:195 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-2] HTTP POST "/users/login"
+21:34:50:195 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-2] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:50:196 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-2] Resource not found
+21:34:50:196 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-2] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:50:196 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-2] Encoding [{timestamp=Thu Sep 26 21:34:50 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:50:197 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-2] Completed 404 NOT_FOUND
+21:34:50:719 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-3] HTTP POST "/users/login"
+21:34:50:719 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-3] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:50:719 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-3] Resource not found
+21:34:50:720 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-3] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:50:720 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-3] Encoding [{timestamp=Thu Sep 26 21:34:50 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:50:721 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-3] Completed 404 NOT_FOUND
+21:34:51:001 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-4] HTTP POST "/users/login"
+21:34:51:002 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-4] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:51:002 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-4] Resource not found
+21:34:51:003 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-4] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:51:003 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-4] Encoding [{timestamp=Thu Sep 26 21:34:51 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:51:004 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-4] Completed 404 NOT_FOUND
+21:34:51:256 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-5] HTTP POST "/users/login"
+21:34:51:256 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-5] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:51:257 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-5] Resource not found
+21:34:51:257 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-5] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:51:258 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-5] Encoding [{timestamp=Thu Sep 26 21:34:51 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:51:259 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-5] Completed 404 NOT_FOUND
+21:34:51:440 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-6] HTTP POST "/users/login"
+21:34:51:440 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-6] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:51:441 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-6] Resource not found
+21:34:51:442 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-6] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:51:442 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-6] Encoding [{timestamp=Thu Sep 26 21:34:51 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:51:443 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-6] Completed 404 NOT_FOUND
+21:34:57:223 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-7] HTTP POST "/users/login"
+21:34:57:225 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [8e191e78-7] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:34:57:226 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [8e191e78-7] Resource not found
+21:34:57:226 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-7] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:34:57:227 DEBUG 16460 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [8e191e78-7] Encoding [{timestamp=Thu Sep 26 21:34:57 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:34:57:228 DEBUG 16460 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [8e191e78-7] Completed 404 NOT_FOUND
+21:36:19:839 DEBUG 16460 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [f736162e-8] HTTP POST "/users/login"
+21:36:19:840 DEBUG 16460 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [f736162e-8] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:36:19:840 DEBUG 16460 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [f736162e-8] Resource not found
+21:36:19:841 DEBUG 16460 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [f736162e-8] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:36:19:841 DEBUG 16460 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [f736162e-8] Encoding [{timestamp=Thu Sep 26 21:36:19 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:36:19:841 DEBUG 16460 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [f736162e-8] Completed 404 NOT_FOUND
+21:48:47:140 DEBUG 16460 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4dc2a0a0-9] HTTP POST "/users/login"
+21:48:47:141 DEBUG 16460 --- [reactor-http-nio-4] o.s.w.r.handler.SimpleUrlHandlerMapping  : [4dc2a0a0-9] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+21:48:47:141 DEBUG 16460 --- [reactor-http-nio-4] o.s.w.r.resource.ResourceWebHandler      : [4dc2a0a0-9] Resource not found
+21:48:47:142 DEBUG 16460 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [4dc2a0a0-9] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+21:48:47:142 DEBUG 16460 --- [reactor-http-nio-4] org.springframework.web.HttpLogging      : [4dc2a0a0-9] Encoding [{timestamp=Thu Sep 26 21:48:47 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+21:48:47:143 DEBUG 16460 --- [reactor-http-nio-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4dc2a0a0-9] Completed 404 NOT_FOUND
+22:02:48:704  WARN 16460 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:02:48:704  WARN 16460 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:02:48:705  WARN 16460 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:02:48:706  WARN 16460 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:02:48:744  INFO 16460 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:02:48:775  INFO 16460 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:02:49:098  INFO 16460 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+22:02:49:099  INFO 16460 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@3f028110[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:02:49:099  INFO 16460 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727357635837_113.200.174.47_34308
+22:02:49:103  INFO 16460 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@36a4c464[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 361]
+22:06:02:363  INFO 10468 --- [main] com.heima.gateway.GateWayApplication     : No active profile set, falling back to 1 default profile: "default"
+22:06:02:866  INFO 10468 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2a1d4158-238a-31da-8370-b446fbcd9be0
+22:06:02:901  INFO 10468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:02:902  INFO 10468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:02:909  INFO 10468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+22:06:03:761  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+22:06:03:762  INFO 10468 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+22:06:03:811 DEBUG 10468 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+22:06:03:843 DEBUG 10468 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+22:06:03:856 DEBUG 10468 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+22:06:04:036  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8082d1a2-b737-44e8-a978-350adebe35a9
+22:06:04:036  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] RpcClient init label, labels = {module=naming, source=sdk}
+22:06:04:037  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+22:06:04:037  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+22:06:04:038  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:06:04:038  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Try to connect to server on start up, server: {serverIp = '39.105.132.218', server main port = 8848}
+22:06:04:235  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Success to connect to server [39.105.132.218:8848] on start up, connectionId = 1727359562778_113.200.174.47_34324
+22:06:04:235  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:06:04:235  INFO 10468 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Notify connected event to listeners.
+22:06:04:235  INFO 10468 --- [main] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$473/0x00000212054e6350
+22:06:04:388  INFO 10468 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+22:06:04:504  INFO 10468 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway 10.198.161.13:8080 register finished
+22:06:04:514  INFO 10468 --- [main] com.heima.gateway.GateWayApplication     : Started GateWayApplication in 4.513 seconds (JVM running for 5.042)
+22:06:04:518  INFO 10468 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway.yaml, group=DEFAULT_GROUP
+22:06:04:519  INFO 10468 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=gateway, group=DEFAULT_GROUP
+22:06:04:802  INFO 10468 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Receive server push request, request = NotifySubscriberRequest, requestId = 17
+22:06:04:807  INFO 10468 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [8082d1a2-b737-44e8-a978-350adebe35a9] Ack server push request, request = NotifySubscriberRequest, requestId = 17
+22:09:28:230 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-1] HTTP POST "/users/login"
+22:09:28:240 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [31b9f1e5-1] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:09:28:242 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [31b9f1e5-1] Resource not found
+22:09:28:254 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-1] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:09:28:263 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-1] Encoding [{timestamp=Thu Sep 26 22:09:28 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:09:28:274 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-1] Completed 404 NOT_FOUND
+22:09:49:694 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-2] HTTP POST "/users/login"
+22:09:49:694 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [31b9f1e5-2] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:09:49:695 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [31b9f1e5-2] Resource not found
+22:09:49:696 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-2] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:09:49:696 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-2] Encoding [{timestamp=Thu Sep 26 22:09:49 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:09:49:698 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-2] Completed 404 NOT_FOUND
+22:09:53:588 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-3] HTTP POST "/users/login"
+22:09:53:589 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [31b9f1e5-3] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:09:53:590 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.r.resource.ResourceWebHandler      : [31b9f1e5-3] Resource not found
+22:09:53:590 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-3] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:09:53:591 DEBUG 10468 --- [reactor-http-nio-2] org.springframework.web.HttpLogging      : [31b9f1e5-3] Encoding [{timestamp=Thu Sep 26 22:09:53 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:09:53:592 DEBUG 10468 --- [reactor-http-nio-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [31b9f1e5-3] Completed 404 NOT_FOUND
+22:12:10:169 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-4] HTTP POST "/users/login"
+22:12:10:171 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [a868a2e3-4] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:12:10:171 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [a868a2e3-4] Resource not found
+22:12:10:171 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-4] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:12:10:171 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-4] Encoding [{timestamp=Thu Sep 26 22:12:10 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:12:10:171 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-4] Completed 404 NOT_FOUND
+22:12:15:742 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-5] HTTP POST "/users/login"
+22:12:15:742 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [a868a2e3-5] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:12:15:743 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [a868a2e3-5] Resource not found
+22:12:15:743 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-5] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:12:15:743 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-5] Encoding [{timestamp=Thu Sep 26 22:12:15 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:12:15:744 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-5] Completed 404 NOT_FOUND
+22:12:16:804 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-6] HTTP POST "/users/login"
+22:12:16:804 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [a868a2e3-6] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:12:16:805 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [a868a2e3-6] Resource not found
+22:12:16:806 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-6] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:12:16:806 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-6] Encoding [{timestamp=Thu Sep 26 22:12:16 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:12:16:808 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-6] Completed 404 NOT_FOUND
+22:12:22:363 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-7] HTTP POST "/users/login"
+22:12:22:365 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [a868a2e3-7] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+22:12:22:365 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.r.resource.ResourceWebHandler      : [a868a2e3-7] Resource not found
+22:12:22:366 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-7] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP POST /users/login
+22:12:22:366 DEBUG 10468 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [a868a2e3-7] Encoding [{timestamp=Thu Sep 26 22:12:22 CST 2024, path=/users/login, status=404, error=Not Found, message=nul (truncated)...]
+22:12:22:367 DEBUG 10468 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a868a2e3-7] Completed 404 NOT_FOUND
+22:14:04:305  WARN 10468 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:14:04:305  WARN 10468 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:14:04:308  WARN 10468 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:14:04:308  WARN 10468 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:14:04:343  INFO 10468 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:14:04:369  INFO 10468 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:14:04:709  INFO 10468 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+22:14:04:710  INFO 10468 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@3a85d96a[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:14:04:711  INFO 10468 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727359562778_113.200.174.47_34324
+22:14:04:716  INFO 10468 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@7aaf411[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 109]

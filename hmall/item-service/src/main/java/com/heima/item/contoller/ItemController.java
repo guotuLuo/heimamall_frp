@@ -1,6 +1,7 @@
 package com.heima.item.contoller;
 
 
+import cn.hutool.core.thread.ThreadUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.common.domain.PageDTO;
 import com.hmall.common.domain.PageQuery;
@@ -12,6 +13,7 @@ import com.heima.item.service.IItemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,6 +22,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/items")
 @RequiredArgsConstructor
+@Slf4j
 public class ItemController {
 
     private final IItemService itemService;
@@ -36,6 +39,7 @@ public class ItemController {
     @ApiOperation("根据id批量查询商品")
     @GetMapping
     public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){
+        ThreadUtil.sleep(500);
         return itemService.queryItemByIds(ids);
     }
 

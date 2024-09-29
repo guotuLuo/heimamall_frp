@@ -1,34 +1,6 @@
 server:
   port: 8080
-spring:
-  application:
-    name: hm-gateway
-  cloud:
-    nacos:
-      server-addr: 39.105.132.218:8848
-    gateway:
-      routes:
-        - id: item
-          uri: lb://item-service
-#          uri: http://localhost:8081
-          predicates:
-            - Path=/items/**,/search/**
-        - id: cart
-          uri: lb://cart-service
-          predicates:
-            - Path=/carts/**
-        - id: user
-          uri: lb://user-service
-          predicates:
-            - Path=/users/**,/addresses/**
-        - id: trade
-          uri: lb://trade-service
-          predicates:
-            - Path=/orders/**
-        - id: pay
-          uri: lb://pay-service
-          predicates:
-            - Path=/pay-orders/**
+
 
 hm:
   jwt:
@@ -42,8 +14,3 @@ hm:
       - /users/login
       - /items/**
       - /hi
-
-logging:
-  level:
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.cloud.loadbalancer: DEBUG

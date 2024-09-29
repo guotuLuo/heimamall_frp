@@ -1,5 +1,7 @@
 package com.heima.cart.service.impl;
 
+import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -104,6 +106,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     }
 
     private void handleCartItems(List<CartVO> vos) {
+        // 睡500ms
+        // 那么每个线程qps低于2
         // TODO 1.获取商品id
         Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
 //        // 2.查询商品
@@ -150,6 +154,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //        }
 //        List<ItemDTO> body = response.getBody();
 
+
+        // 这里调用了item服务，有可能由于购物车访问服务宕机，造成item访问服务也宕机
         List<ItemDTO> body = itemOpenFeignClient.queryItemByIds(itemIds);
 
         if (CollUtils.isEmpty(body)) {
