@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@39.105.132.218" uuid="cc132b6e-051c-4c53-8bfe-a3d9028dcd41">
+    <data-source source="LOCAL" name="@121.36.206.19" uuid="3de5bae6-7005-42e2-bbc8-bc62444368fe">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://39.105.132.218:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://121.36.206.19:3306?useSSL=false&amp;allowPublicKeyRetrieval=true</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-      <driver-properties>
-        <property name="allowPublicKeyRetrieval" value="TRUE" />
-      </driver-properties>
     </data-source>
   </component>
 </project>

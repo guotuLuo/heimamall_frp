@@ -14,7 +14,9 @@ import com.heima.trade.mapper.OrderMapper;
 
 import com.heima.trade.service.IOrderDetailService;
 import com.heima.trade.service.IOrderService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,6 +36,7 @@ import java.util.stream.Collectors;
  * @since 2023-05-05
  */
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements IOrderService {
 
@@ -41,8 +44,10 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private final IOrderDetailService detailService;
     private final CartOpenFeignClient cartOpenFeignClient;
     @Override
-    @Transactional
+//    @Transactional
+    @GlobalTransactional
     public Long createOrder(OrderFormDTO orderFormDTO) {
+        log.info("Received order request ds65a56sd56as5d65a55d56565d1a2s1d21as4d54a: " + orderFormDTO);
         // 1.订单数据
         Order order = new Order();
         // 1.1.查询商品
@@ -87,6 +92,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         } catch (Exception e) {
             throw new RuntimeException("库存不足！");
         }
+        log.info("订单id{}", order.getId());
         return order.getId();
     }
 

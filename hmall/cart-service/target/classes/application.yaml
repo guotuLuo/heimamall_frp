@@ -25,3 +25,14 @@ spring:
       transport:
         dashboard: localhost:8091
       http-method-specify: true
+
+seata:
+  enabled: true
+  application-id: your-app-id
+  tx-service-group: your-tx-group
+  service:
+    vgroup-mapping:
+      your-tx-group: default
+    grouplist:
+      default: 127.0.0.1:8091
+  enable-auto-data-source-proxy: true

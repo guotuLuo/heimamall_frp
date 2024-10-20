@@ -16,6 +16,7 @@ import com.heima.pay.enums.PayStatus;
 import com.heima.pay.mapper.PayOrderMapper;
 import com.heima.pay.service.IPayOrderService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,6 +37,7 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
     private final UserOpenFeignClient userOpenFeignClient;
 
     private final TradeOpenFeignClient tradeOpenFeignClient;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
@@ -67,7 +69,11 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         order.setId(po.getBizOrderNo());
         order.setStatus(2);
         order.setPayTime(LocalDateTime.now());
-        tradeOpenFeignClient.markOrderPaySuccess(po.getBizOrderNo());
+        // 这里修改订单状态
+        // 改成用rabbitMQ
+        // tradeOpenFeignClient.markOrderPaySuccess(po.getBizOrderNo());
+        //
+        rabbitTemplate.convertAndSend("hmall.direct_exchange", "pay.success", po.getBizOrderNo());
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

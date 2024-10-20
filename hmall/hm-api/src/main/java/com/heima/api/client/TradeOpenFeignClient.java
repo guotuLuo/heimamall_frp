@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Collection;
 
-@FeignClient(value = "order-service", configuration = OpenFeignLoggerLevelConfiguration.class, fallbackFactory = TradeFeignFallBackFactory.class)
+@FeignClient(value = "trade-service", configuration = OpenFeignLoggerLevelConfiguration.class, fallbackFactory = TradeFeignFallBackFactory.class)
 public interface TradeOpenFeignClient {
 
     @PutMapping("/orders/{orderId}")
