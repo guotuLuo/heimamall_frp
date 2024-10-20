@@ -1,0 +1,25 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+  level:
+    com.itheima: debug
+spring:
+  rabbitmq:
+    host: 121.36.206.19
+    port: 5672
+    virtual-host: /hmall
+    username: hmall
+    password: 061966
+    listener:
+      simple:
+        prefetch: 1
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    connection-timeout: 1s
+    template:
+      retry:
+        enabled: true
+        initial-interval: 1000ms
+        multiplier: 1
+        max-attempts: 3
+
